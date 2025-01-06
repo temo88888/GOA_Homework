@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 25px;
+
+
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+    "div1 div1 div4"
+    "div3 div2 div4";
+}
+
+
+.div1 {
+    background-color: rgb(252, 96, 87);
+    grid-area: div1;
+}
+
+.div2 {
+     background-color: rgb(27, 193, 161);
+     grid-area: div2;
+}
+
+.div3 {
+    background-color: rgb(1, 167, 135);
+    grid-area: div3;
+}
+
+.div4 {
+    background-color: rgb(253, 160, 97);
+    grid-area: div4;
+}

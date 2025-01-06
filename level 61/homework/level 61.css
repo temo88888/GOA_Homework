@@ -1,0 +1,73 @@
+.noliki {
+    color: darkcyan;
+    width: 52px;
+    height: 52px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    
+}
+
+.noliki:hover {
+    opacity: 1;
+    
+}
+
+
+
+.dracula {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.dracula:hover {
+    transform: rotate(145deg);
+}
+
+
+.foto img {
+     width: 54px;
+     height: 54px;
+     opacity: 0.5;
+     transition: opacity 0.5s, transform 0.5s;
+}
+
+.foto img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+
+}
+
+.slide-in {
+    opacity: 0;
+    position: relative;
+    animation: slide-in 5s forwards;
+}
+
+.from-top {
+    top: -50px;
+}
+
+.from-bottom {
+    top: 50px;
+}
+
+.from-left {
+    left: -50px;
+}
+
+.from-right {
+    left: 50px;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+}
