@@ -1,0 +1,40 @@
+
+.margin-1 {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    border: 1px solid #333;
+    padding: 20px;
+  }
+  
+
+  .margin-2 {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 20px;
+    border: 1px solid #333;
+    padding: 20px;
+  }
+  
+
+  .margin-3 {
+    width: 200px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 30px;
+    border: 1px solid #333;
+    padding: 20px;
+  }
+  
+
+  .margin-4 {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    margin: 15px 25px;
+    border: 1px solid #333;
+    padding: 20px;
+  }
+  

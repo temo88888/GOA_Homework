@@ -1,0 +1,49 @@
+:root {
+    /* Defining CSS Variables */
+    --color: #ffffff;
+    --background-color: #3498db;
+    --font-size: 16px;
+    --font-family: 'Arial', sans-serif;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --border: 2px solid #2ecc71;
+    --border-radius: 10px;
+    --margin: 20px;
+    --padding: 15px;
+    --position: relative;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: var(--font-family);
+}
+
+.box {
+    color: var(--color);
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+    padding: var(--padding);
+    position: var(--position);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+}
+
+#box1 {
+    margin-right: 30px; /* Separate boxes */
+}
+
+#box2 {
+    background-color: #e74c3c; /* Different background for the second box */
+}

@@ -1,0 +1,50 @@
+
+.square {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px; 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  
+  .square-rotate {
+    background-color: #3498db; 
+  }
+  
+  .square-rotate:hover {
+    transform: rotate(45deg); 
+  }
+  
+  
+  .square-scale {
+    background-color: #e74c3c; 
+  }
+  
+  .square-scale:hover {
+    transform: scale(1.5); 
+  }
+  
+  
+  .square-translate {
+    background-color: #2ecc71; 
+  }
+  
+  .square-translate:hover {
+    transform: translateX(100px); 
+  }
+  
+  
+  .square-skew {
+    background-color: #f39c12; 
+  }
+  
+  .square-skew:hover {
+    transform: skewX(20deg); 
+  }
+  

@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+#box1 {
+    background-color: #3498db;
+}
+
+#box2 {
+    background-color: #2ecc71;
+}
+
+#box3 {
+    background-color: #e74c3c;
+}
+
+#box1:hover {
+    transform: rotate(280deg);
+    background-color: #9b59b6;
+}
+
+#box2:hover {
+    transform: scale(3);
+}
+
+#box3:hover {
+    transform: translateX(100px) translateY(100px);
+}
