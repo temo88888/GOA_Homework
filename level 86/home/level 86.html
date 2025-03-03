@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+const book = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald", 
+    year: 1925, 
+    genre: "Novel", 
+    price: 10.99 
+};
+
+console.log(book);
+
+
+console.log("Title:", book.title);
+console.log("Author:", book.author);
+console.log("Year:", book.year);
+console.log("Genre:", book.genre);
+console.log("Price:", book.price);
+
+console.log("Title:", book["title"]);
+console.log("Author:", book["author"]);
+console.log("Year:", book["year"]);
+console.log("Genre:", book["genre"]);
+console.log("Price:", book["price"]);
+
+const sentence = `${book.title} არის წიგნი, რომელიც დაწერილია ${book.author}-ის მიერ. ის გამოიცა ${book.year}-ში და მისი ჟანრი არის ${book.genre}. მისი ფასი არის $${book.price}.`;
+console.log(sentence);
+
+//nomer 2
+
+
+
+
+
+    </script>
+</body>
+</html>

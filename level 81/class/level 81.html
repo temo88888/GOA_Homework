@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>let result = 0;
+
+        for (let i = 1; i <= 1000; i++) {
+            result += i;
+        
+            if (result > 10000) {
+                console.log('Result exceeded 10,000. Breaking the loop.');
+                break
+            }
+        }
+        
+        console.log('Final result:', result);
+
+
+
+
+        //ნომერი 222222
+
+        for (let num = 1; num <= 20; num = num + 1) {
+            if (num === 15) {
+                break;  
+            }
+            if (num % 3 === 0) {
+                continue;  
+            }
+            console.log(num);
+        }
+        
+
+
+
+
+
+
+        //mesameeeeeeee 3
+
+        for (let num = 1; num <= 100; num++) {
+            if (num === 50) {
+                break;
+            }
+            if (num % 4 !== 0) {
+                continue;
+            }
+            console.log(num);
+        }
+        
+        
+
+
+        </script>
+</body>
+</html>

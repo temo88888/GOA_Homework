@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+let password = 'Group 41 is best';
+
+let attempts = 3;
+
+function guessPassword(inputPassword) {
+    if (inputPassword === password) {
+        alert('თქვენი შეყვანილი პაროლი სწორია');
+        return;
+    }
+    
+    if (attempts <= 1) {
+        alert('თქვენ ამოგეწურათ ცდების რაოდენობა');
+        return;
+    }
+    
+    attempts--;
+    alert('პაროლი არასწორია. დარჩა ' + attempts + ' ცდა');
+}
+// nomeri 2
+
+function factorial(N) {
+    let result = 1;
+
+    for (let i = 1; i <= N; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
+console.log(factorial(5));
+
+
+//mesame  3
+
+
+function countdown() {
+
+    for (let i = 100; i >= 0; i--) {
+        console.log(`დარჩენილია ${i} წამი`)}}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>function selectPersonToPay(names) {
+        const randomIndex = Math.floor(Math.random() * names.length);
+
+        const selectedName = names[randomIndex];
+        
+        console.log(`${selectedName} უნდა გადაიხადოს საკვების გადასახადი.`);
+    }
+    
+    const names = ["ანა", "გიორგი", "მარიამი", "დავით", "ნათია"];
+    selectPersonToPay(names);
+
+    //nomero 2
+
+    function fizzBuzzList() {
+        let result = [];
+    
+        for (let i = 1; i <= 30; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                result.push("FizzBuzz");
+            } else if (i % 3 === 0) {
+                result.push("Fizz");
+            } else if (i % 5 === 0) {
+                result.push("Buzz");
+            } else {
+                result.push(i);
+            }
+        }
+    
+        return result;
+    }
+    
+    console.log(fizzBuzzList());
+    
+    </script>
+</body>
+</html>

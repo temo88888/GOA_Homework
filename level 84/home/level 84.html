@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>function findMax(a, b, c) {
+        return Math.max(a, b, c);
+    }
+    
+    console.log(findMax(10, 25, 5));
+
+    //nomeri 2
+
+    function isEven(number) {
+        return number % 2 === 0;
+    }
+    
+    console.log(isEven(4));
+    console.log(isEven(7)); 
+    
+    //nomeri 3
+
+    function multiplyNumbers(start, end) {
+        let product = 1;
+        
+        for (let i = start; i <= end; i++) {
+            product *= i;
+        }
+    
+        return product;
+    }
+    
+    console.log(multiplyNumbers(1, 5));
+
+    //nomeri 4
+
+    function findMin(a, b, c) {
+        return (a < b && a < c) ? a : (b < c ? b : c);
+    }
+    
+    console.log(findMin(10, 5, 7));
+    console.log(findMin(3, 12, 8));
+    
+//nomeri 5
+
+function calculateSum(n) {
+    let sum = 0;
+
+    for (let i = 1; i <= n; i++) {
+        switch (true) {
+            case (i >= 1 && i <= n):
+                sum += i;
+                break;
+        }
+    }
+
+    return sum;
+}
+
+console.log(calculateSum(5));
+console.log(calculateSum(10));
+
+    </script>
+</body>
+</html>
