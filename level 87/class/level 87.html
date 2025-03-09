@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function User(name, lastName, phoneNumber, email, password, confirmPassword) {
+          this.name = name;
+          this.lastName = lastName;
+          this.phoneNumber = phoneNumber;
+          this.email = email;
+          this.password = password;
+          this.confirmPassword = confirmPassword;
+        
+          this.getIntroduction = function() {
+            return `ჩემის სახელია ${this.name}, ჩემი გვარია ${this.lastName}, ჩემი ტელეფონი არის ${this.phoneNumber}, ჩემი ელ-ფოსტა არის ${this.email}.`;
+          };
+        }
+        
+
+        const user1 = new User("გიორგი", "kol", "+995551234567", "@example.com", "password123", "password123");
+        const user2 = new User("მარიამ", "masi", "+995551234568", "@example.com", "password456", "password456");
+        const user3 = new User("ნიკა", "goloa", "+995551234569", "@example.com", "password789", "password789");
+        
+        console.log(user1.getIntroduction());
+        console.log(user2.getIntroduction());
+        console.log(user3.getIntroduction());
+        </script>
+</body>
+</html>
