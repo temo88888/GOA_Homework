@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let myArray = [42, "Hello", true, null, undefined, { name: "John" }, [1, 2, 3], Symbol('sym'), 3.14, function() { return "I'm a function!"; }];
+        
+        console.log(myArray[0]);
+        console.log(myArray[1]); 
+        console.log(myArray[2]);
+        console.log(myArray[4]); 
+        console.log(myArray[6]);
+        
+        myArray[3] = "New value";
+        myArray[5] = 100;
+        myArray[7] = "Updated symbol";
+        myArray[8] = 2.718;
+        myArray[9] = function() { return "Updated function"; };
+        
+        console.log(myArray);
+        
+        let arrayLiteral = [1, "text", false];
+        console.log(arrayLiteral);
+        
+        let arrayConstructor = new Array(1, "string", true);
+        console.log(arrayConstructor);
+        
+        let anotherArrayLiteral = [null, { key: "value" }, [4, 5, 6]];
+        console.log(anotherArrayLiteral);
+        </script>
+</body>
+</html>

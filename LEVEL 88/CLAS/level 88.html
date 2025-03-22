@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function ReviewUser(name, status, review) {
+          this.name = name;
+          this.status = status;
+          this.review = review;
+        }
+        
+        // Academy ობიექტი
+        const academy = {
+          name: "Tech Academy", 
+          courses: ["JavaScript", "Python", "React", "Data Science"],
+          socialLink: "https://www.techacademy.com",
+          reviews: { 
+            review1: new ReviewUser("გიორგი", "parent", "გულიანად ვურჩევ ამ აკადემიას! კურსები ძალიან გამოსადეგია."),
+            review2: new ReviewUser("მარიამი", "child", "ძალიან ვამაყობ ამ აკადემიით. კარგი მასწავლებლები და საინტერესო თემები."),
+            review3: new ReviewUser("ნიკა", "parent", "ხშირად მეშინია ახალი ინფორმაციის სწავლის, მაგრამ აქ ყველაფერი მარტივად აუხსნეს.")
+          }
+        };
+
+//2
+console.log(Object.entries(academy));
+
+// 3            
+
+console.log(Object.keys(academy));
+
+//4  
+
+console.log(Object.values(academy));
+
+//5
+
+console.log("name" in academy);
+console.log("location" in academy);
+
+//6 
+ 
+
+const newObject = {
+    ...academy,
+    member: "Active Member" 
+  };
+  
+  console.log(newObject);
+
+  //7
+
+
+  Object.freeze(academy);
+
+
+academy.name = "New Academy";
+academy.courses.push("HTML");
+
+
+console.log(academy.name);
+console.log(academy.courses); 
+
+//8
+
+console.log(Object.isFrozen(academy));
+
+
+        </script>
+</body>
+</html>

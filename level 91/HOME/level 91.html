@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+
+function getArrayLength(arr) {
+    return arr.length;
+  }
+  
+  function concatenateArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+  }
+  
+  function addValueToArray(arr, value) {
+    arr.push(value);
+    return arr.length;
+  }
+  
+  function removeLastElement(arr) {
+    return arr.pop();
+  }
+  
+  function concatenateAndPush(arr1, arr2, value) {
+    let newArray = arr1.concat(arr2);
+    newArray.push(value);
+    return newArray;
+  }
+  
+  function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    return sum;
+  }
+  
+  function getEvenIndexedElements(arr) {
+    let evenIndexedArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0) {
+        evenIndexedArr.push(arr[i]);
+      }
+    }
+    return evenIndexedArr;
+  }
+  
+  function getStringLengths(arr) {
+    let lengths = [];
+    for (let i = 0; i < arr.length; i++) {
+      lengths.push(arr[i].length);
+    }
+    return lengths;
+  }
+  
+      </script>
+</body>
+</html>

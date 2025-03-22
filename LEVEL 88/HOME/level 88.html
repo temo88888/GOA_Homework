@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script> //davaleba nomer 1
+
+const university = {
+    name: "სახელი უნივერსიტეტის",
+    departments: 10, 
+    website: "www.universitywebsite.com",
+    ratings: {
+        student_1: 4.5,
+        student_2: 3.8,
+        student_3: 4.2
+    }
+};
+
+console.log(`უნივერსიტეტის სახელი: ${university.name}`);
+console.log(`ფაკულტეტების რაოდენობა: ${university.departments}`);
+console.log(`ვებსაიტი: ${university.website}`);
+console.log(`სტუდენტების შეფასებები:`);
+for (let student in university.ratings) {
+    console.log(`${student}: ${university.ratings[student]}`);
+}
+
+//davaleba nomeri 2
+
+const sportsClub = {
+    clubName: "FC Example",
+    sportType: "Football",
+    foundedYear: 1990,
+    achievements: {
+        title_1: "Champions League 1992",
+        title_2: "National Championship 1995",
+        title_3: "Super Cup 1997"
+    }
+};
+
+console.log("Traits of sportsClub object:");
+console.log(Object.keys(sportsClub));
+
+
+console.log("Values of sportsClub object:");
+console.log(Object.values(sportsClub));
+
+
+console.log("Does the sportsClub object have a 'sponsors' property?");
+console.log('sponsors' in sportsClub);
+
+
+const additionalInfo = { stadiumCapacity: 50000 };
+Object.assign(sportsClub, additionalInfo); 
+
+console.log("Updated sportsClub object:");
+console.log(sportsClub);
+
+Object.freeze(sportsClub);
+
+sportsClub.clubName = "New FC Example"; 
+
+console.log("sportsClub object after attempting change:");
+console.log(sportsClub);
+
+console.log("Is the sportsClub object frozen?");
+console.log(Object.isFrozen(sportsClub));
+
+
+//davaleba nomeri 3
+
+const hotel = {
+    hotelName: "Grand Plaza",
+    stars: 5,
+    location: "Paris, France",
+    guestReviews: {
+        guest_1: 4.7,
+        guest_2: 4.5,
+        guest_3: 4.9
+    }
+};
+
+console.log("Properties and values of hotel object:");
+console.log(Object.entries(hotel));
+
+console.log("Does the hotel object have a 'spa' property?");
+console.log('spa' in hotel);
+
+hotel.roomsCount = 200;
+
+console.log("Updated hotel object:");
+console.log(hotel);
+
+Object.freeze(hotel);
+
+
+hotel.hotelName = "New Grand Plaza";
+
+console.log("hotel object after attempting change:");
+console.log(hotel);
+
+console.log("Is the hotel object frozen?");
+console.log(Object.isFrozen(hotel));
+
+//davaleba nomer 4
+// კინოს ობიექტი
+const cinema = {
+    cinemaName: "Cineplex", // კინოს სახელი
+    moviesCount: 50, // ფილმების რაოდენობა
+    location: "Tbilisi, Georgia", // მდებარეობა
+    movieReviews: { // მომხმარებლების შეფასებები
+        user_1: 4.8,
+        user_2: 4.3,
+        user_3: 4.9
+    }
+};
+
+console.log("Properties and values of cinema object:");
+console.log(Object.entries(cinema));
+
+console.log("Does the cinema object have a 'vipSeats' property?");
+console.log('vipSeats' in cinema);
+
+cinema.ticketPrice = 15;
+
+console.log("Updated cinema object:");
+console.log(cinema);
+
+Object.freeze(cinema);
+cinema.cinemaName = "New Cineplex";
+
+console.log("cinema object after attempting change:");
+console.log(cinema);
+
+console.log("Is the cinema object frozen?");
+console.log(Object.isFrozen(cinema));
+
+//davaleba nomeri 5
+const person = {
+    name: "John",
+    age: 30
+  };
+  
+  Object.preventExtensions(person);
+  
+  person.address = "123 Street";
+  
+  console.log(person.address);
+  
+  person.age = 31;
+  console.log(person.age);
+  
+
+      </script>
+</body>
+</html>
