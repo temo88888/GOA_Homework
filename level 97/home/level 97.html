@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM ელემენტების მართვა</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="firstElement">1</div>
+
+  <p class="secondElement">2</p>
+
+  <div>3</div>
+
+  <script>
+    const first = document.getElementById("firstElement");
+    first.style.color = "white";
+    first.style.backgroundColor = "navy";
+    first.style.fontSize = "22px";
+    first.style.fontWeight = "bold";
+    first.textContent = "შეცვლილი პირველი ელემენტი";
+
+    const second = document.querySelector(".secondElement");
+    second.style.color = "green";
+    second.style.backgroundColor = "#e6ffe6";
+    second.style.fontSize = "20px";
+    second.style.fontStyle = "italic";
+    second.textContent = "შეცვლილი მეორე ელემენტი";
+
+    const third = document.querySelectorAll("div")[1];
+    third.style.color = "darkred";
+    third.style.backgroundColor = "#ffe6e6";
+    third.style.fontSize = "18px";
+    third.style.textDecoration = "underline";
+    third.textContent = "შეცვლილი მესამე ელემენტი";
+  </script>
+
+</body>
+</html>
